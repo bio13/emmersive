@@ -1,0 +1,12 @@
+#Ignore logs
+errors.log
+npm-debug.log
+
+#Ignore modules
+node_modules/*
+
+#Ignore .DS_Store
+.DS_Store
+
+#code coverage reports
+*-coverage/
