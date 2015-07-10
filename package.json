@@ -1,0 +1,24 @@
+{
+  "name": "emmersive.io",
+  "version": "0.0.1",
+  "description": "First page",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.1",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bruceywang/emmersive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bruceywang/emmersive/issues"
+  },
+  "homepage": "https://github.com/bruceywang/emmersive#readme"
+}
