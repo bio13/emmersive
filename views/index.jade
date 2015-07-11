@@ -3,7 +3,27 @@ extends layout
 block content
   center
     h2 Choose Wisely
+    div.carousel.slide(id="myCarousel" data-ride="carousel")
+      ol.carousel-indicators
+        li.active(data-target="#myCarousel" data-slide-to="0")
+        li(data-target="#myCarousel" data-slide-to="1")
 
-      
-    div(id="caro" class="carousel slide")
-    img(src="images/msh.png" width="5%" height="5%" class="img-rounded")
+      div.carousel-inner(role="listbox")
+        div.item.active
+         img(src="images/msh.png" width="25%" height="25%" class="img-rounded")
+         div.carousel-caption
+          h3 Do it
+          p Will we solider on?
+        div.item
+         img(src="images/msh2.png" width="25%" height="25%" class="img-rounded")
+         div.carousel-caption
+           h3 Gooey
+           p He's steaming
+
+      a.left.carousel-control(href="#myCarousel" role="button" data-slide="prev")
+        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+        span.sr-only Previous
+      a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
+        span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+        span.sr-only Next
+  div.footer
