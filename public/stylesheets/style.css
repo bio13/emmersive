@@ -1,8 +1,67 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Noto, Roboto, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+body {
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+pre {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+    padding: 10px;
+}
+
+.logo {
+    background: #da392a url("/images/logo_group.png") no-repeat center;
+    height: 100vh;
+    background-size: 500px;
+}
+
+.message--coming-soon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.message--error {
+    background-color: #fff;
+    padding: 20px;
+}
+
+@media (max-width: 450px) {
+    .logo {
+        background-size: 200px;
+        background-position-y: 50px;
+    }
+
+    .message--coming-soon {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 800px) {
+    .logo {
+        background-size: 300px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1400px) {
+    .logo {
+        background-size: 400px;
+    }
 }
